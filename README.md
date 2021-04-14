@@ -13,8 +13,10 @@ The design specifications for the MechaCar suspension coils dictate that the var
     
 ## T-test on suspension coils
 Lot 1 pvalue =1, so we cannot reject null hypothesis
-Lot 2 pvalue =.6072, so we can not reject null hypo
-lot 3 pvalue = .04, so we can reject the null. Thi
+Lot 2 pvalue =.6072, so we cannot reject null hypo
+lot 3 pvalue = .04, so we can reject the null. 
 
 ## study design
+While people who shop for cars likely weigh mpg highly when purchasing a new vehicle, there are several other factors a customer may take into account.  These considerations begin with who your target customer base is, which is also likely correlated to the model of the car being purchased. Holding all things equal (no significance in price or mpg compared to competitors), a big distinguisher between the MechaCar brand and others would be safety features.
 
+Similarly to how we determined which features are correlated to a car's mpg, we would need to determine which features of a car would have a non-random amount of cariance in relation to safety ratings.  This would be done by acquiring a large pool of data for several different mechacar features and competitors features.  Linear regression and subsequent summary statistics would provide coefficients that would tell us which variables are related to safety.  We would then perform a t.test on those categorical features (say, break traction in inclimate weather) to determine if there is any statistical significace between means of Mechacar's safety and competitors safety.
